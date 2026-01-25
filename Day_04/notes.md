@@ -1,0 +1,2 @@
+- if(condition)->condition Need boolean ->camparision Operator & Logical
+- Declaration->Creating a Variable

@@ -1,0 +1,4 @@
+- babel
+- convet to code like work in old browser.
+- what is babel plug in
+- 

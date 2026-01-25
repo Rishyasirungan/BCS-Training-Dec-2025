@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root{
+            padding: 16px;
+            --card-bg-clr : #f3f4f6;
+            --card-text-style: 'Times New Roman', Times, serif;
+            --card-pad-size: 0.5rem;
+            --card-bdr-size: calc(var(--card-pad-size)*2);
+            --card-bdr-clr: cornflowerblue;
+            --card-text-size: calc(var(--card-pad-size)*2);
+        }
+        div {
+            background-color: var(--card-bg-clr);
+            border-radius: calc(var(--card-pad-size)*3);
+            padding-left: calc(var(--card-pad-size)*2);
+            border-left: var(--card-bdr-size) solid var(--card-bdr-clr);
+            width:100%;
+            font-size: (var(--card-text-size));
+            font-family: var(--card-text-type);
+            height: 100%;
+            /* padding: var(--card-pad-size); */
+        }
+        
+        body{
+            min-height: 100vh;
+            display: grid;
+            place-content: center;
+            margin: 0;
+        }
+        
+    </style>
+</head>
+<body>
+    <div>
+        <h3>Intended Audience</h3>
+    <p>
+    This tutorial assumes that you already have a static Reat site,<br> 
+    (Gatsby/Next)being deployed in Vercel or Netlify.<br>
+    <br>
+    Its written with the intermediate React developer in mind; if you're newer to <br>     
+    the modern JS ecosystem, it might be a bit hard to follow. <br>
+    </p>
+    </div>
+    
+</body>
+</html>

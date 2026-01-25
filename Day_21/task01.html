@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      body {
+        margin: 0;
+        display: grid;
+        place-content: center;
+        min-height: 100vh;
+
+        font-family: sans-serif;
+      }
+
+      h1 {
+        font-size: 4rem;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>10</h1>
+
+    <script>
+      //  Your code - Use Callback hell pattern
+      //   setTimeout(() => {
+      //     const num = document.querySelector('h1').innerText--;
+      //   }, 1000);
+
+    //   setTimeout(() => {
+    //     const num = (document.querySelector("h1").innerText = 9);
+    //     setTimeout(() => {
+    //       const num = (document.querySelector("h1").innerText = 8);
+    //       setTimeout(() => {
+    //         const num = (document.querySelector("h1").innerText = 7);
+    //         setTimeout(() => {
+    //           const num = (document.querySelector("h1").innerText = 6);
+    //           setTimeout(() => {
+    //             const num = (document.querySelector("h1").innerText = 5);
+    //             setTimeout(() => {
+    //               const num = (document.querySelector("h1").innerText = 4);
+    //               setTimeout(() => {
+    //                 const num = (document.querySelector("h1").innerText = 3);
+    //                 setTimeout(() => {
+    //                   const num = (document.querySelector("h1").innerText = 2);
+    //                   setTimeout(() => {
+    //                     const num = (document.querySelector(
+    //                       "h1"
+    //                     ).innerText = 1);
+    //                     setTimeout(() => {
+    //                       const num = (document.querySelector("h1").innerText =
+    //                         "HAPPY PONGAL");
+    //                     }, 1000);
+    //                   }, 1000);
+    //                 }, 1000);
+    //               }, 1000);
+    //             }, 1000);
+    //           }, 1000);
+    //         }, 1000);
+    //       }, 1000);
+    //     }, 1000);
+    //   }, 1000);
+
+      const countDownStart = new Promise((resolve, reject)=>{
+        let countDown = document.querySelector("h1").innerText;
+        if(countDown>0){
+            setTimeout(()=>{
+                resolve(countDown)
+            },1000)
+        }
+        else{
+            reject('CountDown Stopped')
+        }
+      })
+      //console.log(countDownStart);
+      countDownStart.then((countStart)=> console.log(countStart))
+                    .catch(msg=>msg);
+    </script>
+  </body>
+</html>

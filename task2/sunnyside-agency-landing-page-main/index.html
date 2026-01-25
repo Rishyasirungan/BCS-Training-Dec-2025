@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Sunnyside agency landing page</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .header-container{
+      display:flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0rem 2rem;
+      background-image: url(./images/desktop/image-header.jpg);
+      flex-wrap: wrap;
+      height: 200px;
+      h3{
+        font-family: sans-serif;
+        font-size: 1.7rem;
+        color: oklab(1 0 0);
+      }
+      button{
+        font-weight: 800;
+        padding: 0.5rem 0.9rem;
+        background-color: oklab(1 0 0);
+        border: 0;
+        border-radius: 20px;
+      }
+    }
+    .header-list{
+      display: flex;
+      gap: 2rem;
+      padding-left: 45rem;
+      li{
+        list-style-type: none;
+      }
+      a{
+        text-decoration: none;
+        color: oklab(1 0 0 / 0.82);
+        font-family: sans-serif;
+      }
+    }
+    
+    .discription-containers{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+    .clients-container{
+      width:auto;
+      display: flex;
+      .first-client-container, .second-client-container, .third-client-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+    /* .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); } */
+  </style>
+</head>
+<body>
+  <header class="header-container">
+      <h3>sunnyside</h3>
+    <ul class="header-list">
+      <li><a href="">About</a></li>
+      <li><a href="">Services</a></li>
+      <li><a href="">Projects</a></li>
+    </ul>
+    <button>CONTACT</button>
+    <h1>We are creatives</h1>
+
+  </header>
+  
+  
+  
+  
+  
+<div class="discription-containers">
+<div class="box-one-container">
+Transform your brand
+
+  We are a full-service creative agency specializing in helping brands grow fast. 
+  Engage your clients through compelling visuals that do most of the marketing for you.
+
+  Learn more
+</div>
+<div class="box-two-container">
+<img src="./images/desktop/image-transform.jpg" alt="">
+</div>
+  <div class="box-three-container">
+    <img src="./images/desktop/image-stand-out.jpg" alt="">
+  </div>
+<div class="box-four-container">
+Stand out to the right audience
+
+  Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places. 
+
+  Learn more
+</div>
+
+<div class="box-five-container">
+Graphic design
+  Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention.
+</div>
+  
+<div class="box-six-container">
+  Photography
+  Increase your credibility by getting the most stunning, high-quality photos that improve your business image.
+</div>
+</div>
+  
+
+  
+
+  
+<div class="testimonials-container">
+ <h2>Client testimonials</h2>
+<div class="clients-container">
+  <div class="first-client-container">
+    <img src="./images/image-emily.jpg" alt="">
+    <p>We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.
+  </p>
+  <h3>Emily R.</h3>
+  <p>Marketing Director</p>
+</div>
+  <div class="second-client-container">
+    <img src="./images/image-thomas.jpg" alt="">
+    <p>Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience.</p>
+
+  <h3>Thomas S.</h3>
+  <p>Chief Operating Officer</p>
+  </div>
+  <div class="third-client-container">
+    <img src="./images/image-jennie.jpg" alt="">
+<p>Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!</p>
+   <h3>Jennie F.</h3>
+   <p>Business Owner</p>
+  </div>
+</div>
+</div>
+
+  About
+  Services
+  Projects
+  Contact
+
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function task_1_3() {
+        fetch(
+          "https://restcountries.com/v3.1/all?fields=name,flags,region,population,capital",
+        )
+          .then((responce) => responce.json())
+          .then((data) =>
+            data
+              .filter((country) => country.population > 10000000)
+              .toSorted((a, b) => b.population - a.population),
+          )
+          .then((result) =>
+            result.map((obj, index) =>
+              console.log(`${index + 1} ${obj.name.common} ${obj.population}`),
+            ),
+          );
+      }
+      //task_1_3();
+
+      function task_1_4() {
+        fetch(
+          "https://restcountries.com/v3.1/all?fields=name,flags,region,population,capital",
+        )
+          .then((responce) => responce.json())
+          .then((data) =>
+            data
+              .filter((country) => country.population > 10000000)
+              .toSorted((a, b) => b.population - a.population)
+              .slice(0, 10),
+          )
+          .then((result) =>
+            result.map((obj, index) =>
+              console.log(`${index + 1} ${obj.name.common} ${obj.population}`),
+            ),
+          );
+      }
+      task_1_4();
+    </script>
+  </body>
+</html>

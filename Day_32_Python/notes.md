@@ -25,5 +25,16 @@
     - this like a slice
 
 
+# Class
+- Instatiation | instatiate | creating a object
+- constructor __init__ method
+- when he instatiation the object init method will called
+
+- # method
+    - instate method
+    - class method
+    - static method 
+
+
 
 

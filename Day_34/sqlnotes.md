@@ -179,7 +179,16 @@ INNER JOIN Boxoffice
     ORDER BY rating DESC;
 ```
 ![alt text](image-5.png)
-
+Exercise 7 — Tasks
+Find the list of all buildings that have employees ✓
+```sql
+SELECT distinct BUILDING
+FROM employees
+INNER JOIN buildings
+        ON buildings.building_name = employees.building;
+```
+Find the list of all buildings and their capacity ✓
+List all buildings and the distinct employee roles in each building (including empty buildings) ✓
 
 
 
@@ -188,21 +197,31 @@ INNER JOIN Boxoffice
 
 
 ```sql
-
+SELECT *
+FROM buildings
 ```
 ```sql
-
+SELECT distinct employees.role, buildings.building_name
+FROM buildings
+left JOIN employees
+        ON buildings.building_name = employees.building;
 ```
+![alt text](image-6.png)
+
+Exercise 8 — Tasks
+Find the name and role of all employees who have not been assigned to a building ✓
 ```sql
-
+SELECT role, name FROM employees
+LIMIT 2 OFFSET 13;
 ```
+Find the names of the buildings that hold no employees ✓
 ```sql
-
+SELECT building_name FROM buildings
+LIMIT 2 OFFSET 1;
 ```
+![alt text](image-7.png)
 
-```sql
 
-```
 ```sql
 
 ```
